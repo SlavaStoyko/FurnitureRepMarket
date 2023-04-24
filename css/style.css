@@ -200,7 +200,7 @@ main {
   }
   .discont_menu_list {
     position: absolute;
-    top: -50%;
+    top: -100%;
     right: 0%;
     background-color: #1E2E36;
     z-index: 3;
