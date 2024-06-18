@@ -1,0 +1,93 @@
+.prefNaw{
+    position: absolute;
+    border: 1px solid $color_sub_font;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+ svg.arrowStyle{
+    fill:$color_sub_font;
+    width: 12px;
+    height: 7px;
+    
+}
+div.nA.prefNaw:hover{
+    background-color: white;
+    
+}
+div.nA.prefNaw:hover svg{
+    
+    fill: $color_main_font;
+    
+}
+.Right{
+    right: 25px;
+}
+.Left{
+    left: 25px;
+}
+.Left, .Right{
+    top:50%;
+    z-index: 2;
+}
+
+.preference{
+    &__list{
+        margin: 50px 0;
+        &__item{
+            &__card{
+            
+                color: $color_sub_font;
+                padding:30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                gap: 40px;
+                overflow: hidden;
+                transition: all 1s ease-in;
+                h3{
+                    text-decoration:underline;
+                    text-decoration-thickness: 3px;
+                    text-decoration-color: $color_decorate_elem; 
+                    text-underline-offset: 10px;
+                    
+                }
+                p{
+                    visibility: hidden;
+                }
+            }
+
+
+            &__card *{
+                transform: translateY(70px); //JS hover
+            }
+
+
+
+            &__card.premium{
+                background-image: url("../../images/preference/slide_card1.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 350px;
+
+            }
+            &__card.strong{
+                background-image: url("../../images/preference/slide_card2.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 350px;
+
+            }
+            &__card.safty{
+                background-image: url("../../images/preference/slide_card3.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;
+                height: 350px;
+
+            }
+        }
+    }
+}
+.SB{
+    overflow: hidden;
+}

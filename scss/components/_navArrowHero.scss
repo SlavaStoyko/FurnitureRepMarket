@@ -1,0 +1,16 @@
+.navArrow{
+  position: relative;
+    display: flex;
+    gap: 8px;
+      & .nA{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__left svg{
+        transform: rotate(90deg);
+      }
+      &__right svg{
+        transform: rotate(-90deg);
+      }
+  }

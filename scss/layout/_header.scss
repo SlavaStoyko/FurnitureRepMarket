@@ -1,0 +1,81 @@
+.mainMenu {
+  border-bottom: 1px solid $color_main_font;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    gap: 60px;
+    align-items: center;
+    & .contactPhone {
+        &__number:hover{
+            color: $color_decorate_elem;
+            & svg{
+                stroke: $color_decorate_elem;
+            }
+        }
+        &__number a:hover{
+            text-decoration: none;
+        }
+        &__number svg{
+            fill: none;
+            stroke: $color_main_font;
+        }
+    
+    
+    }
+  }
+}
+
+.nav__Mmenu {
+  display: none;
+}
+.nav__Mmenu__list {
+  display: flex;
+  gap: 15px;
+}
+
+.subMenu__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+    &__basket:hover{
+        color: $color_decorate_elem;
+       & svg {
+        stroke: $color_decorate_elem;
+       }
+    }
+    &__basket a:hover{
+        text-decoration: none;
+    }
+}
+.nav__Smenu {
+  display: none;
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+}
+.subMenu__order {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .burger {
+    display: none;
+  }
+  .nav__Mmenu {
+    display: block;
+  }
+  .nav__Smenu {
+    display: block;
+  }
+}
+@media screen and (min-width: 780px) {
+  .subMenu__order {
+    display: block;
+  }
+  .socialLinks p {
+    display: block;
+  }
+}

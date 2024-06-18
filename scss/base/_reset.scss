@@ -1,0 +1,121 @@
+*,
+*::backdrop,
+*::after {
+  border: none;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Proxima Nova;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22.5px;
+  color: $color_main_font;
+}
+.visually-hidden {
+  /* position: absolute;
+  left: -10000;
+  top: auto;
+  width: 1px;
+  height: 1;
+  overflow: hidden;
+  visibility: hidden; */
+  display: none;
+}
+.wrapper{
+  
+  
+}
+main section{
+  margin: 100px 0;
+}
+main section:first-child{
+  margin-bottom: 100px;
+  margin-top: 0;
+}
+
+.burger{
+  display: block;
+}
+.container{
+  max-width: 1838px;
+  padding: 0 10px;
+  margin: 0px auto;
+  
+}
+h1 {
+  font-size: 48px;
+}
+h2 {
+  font-size: 36px;
+  text-align: center;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+ @media screen and (min-width: 720px){
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 48px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+ } 
+
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: inherit;
+}
+a:hover {
+  text-decoration:underline;
+  text-decoration-thickness: 3px;
+  text-decoration-color: $color_decorate_elem;
+  text-underline-offset: 10px;
+  color: inherit;
+}
+img{
+  max-width: 100%;
+}
+
+
+ul{
+  list-style-type: none;
+}
+
+
+
+
+/* libertyELEMs */
+
+.ibox{
+  position: relative;
+  &::before{
+    /* content: "";
+    background-color: $color_decorate_elem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 98%; */
+  }
+}
+

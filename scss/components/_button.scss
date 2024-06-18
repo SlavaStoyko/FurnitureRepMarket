@@ -1,0 +1,12 @@
+button {
+    background: none;
+    color:$color_sub_font;
+    text-transform: uppercase;
+    background-color:$color_decorate_elem;
+    border-radius: 3px;
+    padding: 14px 46px;
+  }
+  button:hover{
+    background-color: $color_decorate_elemHover;
+
+  }

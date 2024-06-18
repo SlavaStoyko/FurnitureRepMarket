@@ -1,0 +1,19 @@
+@import "./utils/variables";
+
+@import "./base/reset";
+
+@import "./components/mobilemenu";
+@import "./components/form";
+@import "./components/navArrowHero";
+@import "./components/button";
+@import "./components/iconSvg";
+@import "./components/windowModal";
+@import "./components/socialLinks";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/preference";
+@import "./layout/goods";
+@import "./layout/about";
+@import "./layout/question";
+@import "./layout/_footer";

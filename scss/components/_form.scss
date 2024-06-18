@@ -1,0 +1,15 @@
+form {
+    margin-top: 30px;
+  & input {
+    border: 1px solid $color_main_font;
+    border-radius: 3px;
+    padding: 15px;
+    }
+    & .position * {
+        width: 100%;
+        }
+        
+        & * {
+            margin-bottom: 15px;
+        }
+}

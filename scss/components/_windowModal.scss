@@ -1,0 +1,48 @@
+html {
+ // overflow: hidden;
+}
+.windowModal {
+&.active {
+   position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $color_main_font;
+  z-index: 3;
+  color: $color_sub_font;
+}
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    & .burger,
+    & .navMmenu {
+      margin: 80px 0;
+    }
+  }
+}
+
+.mobileMmenu {
+  &.active{display: block;}
+  &__list {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+    }
+    .mobileSmenu{
+      
+      &.active{display: block;}
+  
+    &__list{
+        height: 400px;
+    //display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+}
