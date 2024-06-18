@@ -70,8 +70,3 @@ card.forEach(element => {
     
     })
 });
-
-
-
-//----------------------scrooll
-

@@ -16,14 +16,18 @@ body {
   color: #1E2E36;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 .visually-hidden {
-  /* position: absolute;
-  left: -10000;
-  top: auto;
-  width: 1px;
-  height: 1;
-  overflow: hidden;
-  visibility: hidden; */
   display: none;
 }
 
@@ -335,6 +339,7 @@ svg:hover {
   justify-content: space-between;
   align-items: center;
   padding: 15px 0;
+  gap: 10px;
 }
 .subMenu__block__basket:hover {
   color: #44C697;
@@ -375,6 +380,14 @@ svg:hover {
   }
   .socialLinks p {
     display: block;
+  }
+}
+@media screen and (max-width: 620px) {
+  .contactPhone__number {
+    display: none;
+  }
+  .subMenu__block__basket {
+    display: none;
   }
 }
 .nA:hover {

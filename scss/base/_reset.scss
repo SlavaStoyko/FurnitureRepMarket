@@ -13,14 +13,17 @@ body {
   line-height: 22.5px;
   color: $color_main_font;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 .visually-hidden {
-  /* position: absolute;
-  left: -10000;
-  top: auto;
-  width: 1px;
-  height: 1;
-  overflow: hidden;
-  visibility: hidden; */
   display: none;
 }
 .wrapper{
