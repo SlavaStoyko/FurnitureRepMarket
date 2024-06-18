@@ -485,19 +485,19 @@ div.nA.prefNaw:hover svg {
   transform: translateY(70px);
 }
 .preference__list__item__card.premium {
-  background-image: url("../../images/slide_card1.jpg");
+  background-image: url("../../images/card1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px;
 }
 .preference__list__item__card.strong {
-  background-image: url("../../images/slide_card2.jpg");
+  background-image: url("../../images/card2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px;
 }
 .preference__list__item__card.safty {
-  background-image: url("../../images/slide_card3.jpg");
+  background-image: url("../../images/card3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 350px;
