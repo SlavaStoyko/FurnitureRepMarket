@@ -408,53 +408,6 @@ svg:hover {
     display: none;
   }
 }
-.nA:hover {
-  background-color: #1E2E36;
-}
-
-.nA:hover svg {
-  fill: #FFF;
-}
-
-.hero {
-  position: relative;
-}
-.hero__info {
-  background-color: #FFF;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 24.28%;
-  height: 85.52%;
-  margin-left: 4%;
-  padding: 0 4px;
-}
-.hero__info__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  height: inherit;
-}
-.hero__info__list__item h1 {
-  font-size: 30px;
-}
-.hero__info__list__item h3 {
-  font-size: 20px;
-}
-.hero__info__list__item button {
-  padding: 7px 10px;
-}
-.hero__info__list__item > .navArrow .nA {
-  border: 1px solid #1E2E36;
-  border-radius: 50%;
-  padding: 8px;
-}
-.hero__info__list__item > .navArrow .nA svg {
-  width: 11px;
-  height: 6px;
-}
-
 .prefNaw {
   position: absolute;
   border: 1px solid #FFF;

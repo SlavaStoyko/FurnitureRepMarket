@@ -26,8 +26,9 @@ const openMainMenu = () => {
     Smenu.style.display = "none";
     bouger[2].style.display = "block";
     htmlDoc.style.overflow = 'hidden';
+    modal.style.overflowY = 'auto';
 }
- const openSubMenu = () => {
+const openSubMenu = () => {
     bouger[2].classList.add('active');
     bouger[1].classList.add('active');
     modal.classList.add('active');
@@ -35,8 +36,9 @@ const openMainMenu = () => {
     Smenu.style.display = "block";
     bouger[2].style.display = "block";
     htmlDoc.style.overflow = 'hidden';
+    modal.style.overflowY = 'auto';
 }
- const hiddenMenu = () =>{
+const hiddenMenu = () =>{
     bouger[2].classList.add('active');
     bouger[0].classList.remove('active');
     bouger[1].classList.remove('active');
@@ -45,6 +47,7 @@ const openMainMenu = () => {
     Smenu.style.display = "none";
     bouger[2].style.display = "none";
     htmlDoc.style.overflow = 'visible';
+    modal.style.overflow = 'hidden';
     
 }
 
