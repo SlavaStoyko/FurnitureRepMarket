@@ -1,3 +1,21 @@
+@media screen and (min-width: 720px){
+ h1 {
+   font-size: 64px;
+ }
+ h2 {
+   font-size: 48px;
+   text-align: center;
+ }
+ h3 {
+   font-size: 36px;
+ }
+ h4 {
+   font-size: 24px;
+ }
+ h5 {
+   font-size: 18px;
+ }
+} 
 *,
 *::backdrop,
 *::after {
@@ -26,10 +44,7 @@ input[type=number] {
 .visually-hidden {
   display: none;
 }
-.wrapper{
-  
-  
-}
+
 main section{
   margin: 100px 0;
 }
@@ -63,25 +78,6 @@ h4 {
 h5 {
   font-size: 14px;
 }
- @media screen and (min-width: 720px){
-  h1 {
-    font-size: 64px;
-  }
-  h2 {
-    font-size: 48px;
-    text-align: center;
-  }
-  h3 {
-    font-size: 36px;
-  }
-  h4 {
-    font-size: 24px;
-  }
-  h5 {
-    font-size: 18px;
-  }
- } 
-
 
 a {
   text-decoration: none;
@@ -98,27 +94,11 @@ a:hover {
 img{
   max-width: 100%;
 }
-
-
 ul{
   list-style-type: none;
 }
 
-
-
-
-/* libertyELEMs */
-
 .ibox{
   position: relative;
-  &::before{
-    /* content: "";
-    background-color: $color_decorate_elem;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 98%; */
-  }
 }
 

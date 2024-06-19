@@ -1,8 +1,13 @@
-export const getScrollUp = (event, obj) => {
+const question = document.querySelector('#question');
+const page = document.querySelector('#header');
+
+export const getScrollUp = (event) => {
     event.preventDefault();
-   return obj.scrollIntoView({behavior:"smooth"});
+   return page.scrollIntoView({behavior:"smooth"});
 }
-export const getOrderCall = (event, obj) => {
+
+export const getOrderCall = (event) => {
     event.preventDefault();
-   return obj.scrollIntoView({behavior:"smooth"});
+    
+    return question.scrollIntoView({behavior:"smooth"});
 }

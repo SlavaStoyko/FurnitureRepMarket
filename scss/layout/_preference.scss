@@ -11,11 +11,11 @@
     height: 7px;
     
 }
-div.nA.prefNaw:hover{
+.prefNaw:hover{
     background-color: white;
     
 }
-div.nA.prefNaw:hover svg{
+.prefNaw:hover svg{
     
     fill: $color_main_font;
     
@@ -42,7 +42,7 @@ div.nA.prefNaw:hover svg{
                 display: flex;
                 flex-direction: column;
                 justify-content: end;
-                gap: 40px;
+                gap: 20px;
                 overflow: hidden;
                 transition: all 1s ease-in;
                 h3{

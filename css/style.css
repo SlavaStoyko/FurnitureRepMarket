@@ -1,4 +1,22 @@
 @charset "UTF-8";
+@media screen and (min-width: 720px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 48px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 36px;
+  }
+  h4 {
+    font-size: 24px;
+  }
+  h5 {
+    font-size: 18px;
+  }
+}
 *,
 *::backdrop,
 *::after {
@@ -71,24 +89,6 @@ h5 {
   font-size: 14px;
 }
 
-@media screen and (min-width: 720px) {
-  h1 {
-    font-size: 64px;
-  }
-  h2 {
-    font-size: 48px;
-    text-align: center;
-  }
-  h3 {
-    font-size: 36px;
-  }
-  h4 {
-    font-size: 24px;
-  }
-  h5 {
-    font-size: 18px;
-  }
-}
 a {
   text-decoration: none;
   text-transform: uppercase;
@@ -111,18 +111,8 @@ ul {
   list-style-type: none;
 }
 
-/* libertyELEMs */
 .ibox {
   position: relative;
-}
-.ibox::before {
-  /* content: "";
-  background-color: $color_decorate_elem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 98%; */
 }
 
 .burger {
@@ -244,14 +234,14 @@ svg:hover {
   align-items: center;
 }
 .windowModal__block .burger, .windowModal__block .navMmenu {
-  margin: 80px 0;
+  margin: 40px 0;
 }
 
 .mobileMmenu.active {
   display: block;
 }
 .mobileMmenu__list {
-  height: 400px;
+  height: 200px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -262,10 +252,33 @@ svg:hover {
   display: block;
 }
 .mobileSmenu__list {
-  height: 400px;
+  height: 200px;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.mobileSmenu__list .mobileSmenu__basket {
+  display: none;
+}
+.mobileSmenu__list .mobileSmenu__basket svg {
+  stroke: #FFF;
+}
+@media screen and (max-width: 620px) {
+  .mobileSmenu__list .mobileSmenu__basket {
+    display: block;
+  }
+  .mobileSmenu__list .mobileSmenu__basket svg {
+    stroke: #FFF;
+  }
+}
+.mobileSmenu__list .mobileSmenu__order {
+  display: none;
+}
+@media screen and (max-width: 779px) {
+  .mobileSmenu__list .mobileSmenu__order {
+    display: block;
+  }
 }
 
 .socialLinks {
@@ -451,11 +464,11 @@ svg.arrowStyle {
   height: 7px;
 }
 
-div.nA.prefNaw:hover {
+.prefNaw:hover {
   background-color: white;
 }
 
-div.nA.prefNaw:hover svg {
+.prefNaw:hover svg {
   fill: #1E2E36;
 }
 
@@ -481,7 +494,7 @@ div.nA.prefNaw:hover svg {
   display: flex;
   flex-direction: column;
   justify-content: end;
-  gap: 40px;
+  gap: 20px;
   overflow: hidden;
   transition: all 1s ease-in;
 }
